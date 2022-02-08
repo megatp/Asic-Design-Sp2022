@@ -2,7 +2,7 @@
 # and link libraries
 set target_library saed32rvt_tt1p05v25c.db
 set symbol_library saed32rvt_tt1p05v25c.db
-set synthetic_library dw_foundation.sldb
+#set synthetic_library dw_foundation.sldb
 set link_library [concat $target_library "*"]
 set search_path [concat $search_path ./src]
 set designer "Puteri Hamari"
