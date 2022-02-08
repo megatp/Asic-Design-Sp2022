@@ -1,0 +1,19 @@
+# Define the target technology library, symbol library, 
+# and link libraries
+set target_library saed32rvt_ss0p7v25c.db
+set symbol_library saed32rvt_ss0p7v25c.db
+set synthetic_library saed32rvt_ss0p7v25c.db
+set link_library [concat $target_library "*"]
+set search_path [concat $search_path ./src]
+set designer "Puteri Hamari"
+set company "MNSU Mankato."
+# Define path directories for file locations
+set source_path "./src/"
+if {$dc_shell_mode == "default"} {
+   set script_path "./dcsh_scr/"
+} else {
+   set script_path "./dctcl_scr/"
+}
+set log_path "./log/"
+set db_path "./db/"
+set netlist_path "./netlist/" 
